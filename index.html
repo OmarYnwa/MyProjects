@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container py-5">
+            <h2 class="position-relative">Bookmarker</h2>
+        </div>
+    </nav>
+    <section class="h-auto pt-5 pb-2">
+        <div class="container text-center w-75 h-100">
+            <div class="box h-auto w-100 ">
+                <div class="w-75 m-auto">
+                    <h3 class="mb-3 position-relative">Bookmark your favorite sites</h3>
+                    <p class="mb-2">Site name</p>
+                    <input onkeydown="onkey1()" type="text" class="w-100 mb-2 " placeholder="Bookmark Name" id="wsname">
+                    <div id="pragraph1" ></div>
+                    <p class="mb-2">Site url</p>
+                    <input onkeydown="onkey2()" class="w-100 mb-3" type="text" placeholder="insert the name of web site and You will be transferred" id="wsurl">
+                    <div id="pragraph2"></div>
+                    <button onclick="addlink()" class="btn btn-outline-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container w-75">
+    <table id="mytable" class="table table-striped ">
+    </table>
+</div>
+    <section class="py-5">
+        <div class="container">
+            <p class="position-relative">© 2019 Bookmarker Inc.</p>
+        </div>
+    </section>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
